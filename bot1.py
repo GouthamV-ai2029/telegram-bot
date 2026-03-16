@@ -83,14 +83,16 @@ COUNTRIES = {
     "indonesia": {"NAME": "🇮🇩 INDONESIA", "PRICE": 37,"STOCK": True},
     "iran":{"NAME": "🇮🇷 IRAN", "PRICE":55, "STOCK": True},
     "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True}
-}
+},
+    "vietnam":{"NAME": "🇻🇳 VIETNAM", "PRICE":37,"STOCK":True
 COUNTRY_NUMBERS = {
 	"indonesia": [],
     "usa": [],
     "india":[],
     "bangladesh":[],
     "zimbabwe": [],
-    "myanmar":[]
+    "myanmar":[],
+    "vietnam":[]
 }
 
 def send_payment_qr(chat_id, amount):
