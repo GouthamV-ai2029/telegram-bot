@@ -84,7 +84,7 @@ COUNTRIES = {
     "iran":{"NAME": "🇮🇷 IRAN", "PRICE":55, "STOCK": True},
     "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True}
 },
-    "vietnam":{"NAME": "🇻🇳 VIETNAM", "PRICE":37,"STOCK":True
+    "vietnam":{"NAME": "🇻🇳 VIETNAM", "PRICE":37,"STOCK":True}
 COUNTRY_NUMBERS = {
 	"indonesia": [],
     "usa": [],
