@@ -80,7 +80,9 @@ COUNTRIES = {
     "zimbabwe": {"NAME": "🇿🇼 ZIMBABWE", "PRICE": 40, "STOCK": True},
     "bangladesh": {"NAME": "🇧🇩 BANGLADESH", "PRICE": 40, "STOCK": True},
     "indonesia": {"NAME": " 🇮🇩 INDONESIA", "PRICE": 37,"STOCK": True},
-    "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True}
+    "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True},
+    "vietnam": {"NAME":"🇻🇳 VIETNAM","PRICE":60,"STOCK":True}
+    
 }
 COUNTRY_NUMBERS = {
     "indonesia": [],
