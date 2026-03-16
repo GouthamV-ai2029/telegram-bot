@@ -90,7 +90,7 @@ COUNTRY_NUMBERS = {
     "india":[],
     "bangladesh":[],
     "vietnam":[],
-    "nepal": [],
+    "zimbabwe": [],
     "myanmar":[]
 }
 
