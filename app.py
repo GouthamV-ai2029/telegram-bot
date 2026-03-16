@@ -25,4 +25,4 @@ st.title("Telegram Bot Dashboard")
 st.write("Messages received:")
 
 for user, msg in messages:
-    st.write(f"{user}: {msg}")t")
+    st.write(f"{user}: {msg}")
