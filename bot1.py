@@ -1,5 +1,4 @@
 import telebot
-
 from telebot import types
 import qrcode
 from io import BytesIO
@@ -80,18 +79,18 @@ COUNTRIES = {
     "usa": {"NAME": "🇺🇸 USA", "PRICE": 60, "STOCK": True},
     "zimbabwe": {"NAME": "🇿🇼 ZIMBABWE", "PRICE": 40, "STOCK": True},
     "bangladesh": {"NAME": "🇧🇩 BANGLADESH", "PRICE": 40, "STOCK": True},
-    "indonesia": {"NAME": "🇮🇩 INDONESIA", "PRICE": 37, "STOCK": True},
-    "myanmar": {"NAME": "🇲🇲 MYANMAR", "PRICE": 37, "STOCK": True},
-    "vietnam": {"NAME": "🇻🇳 VIETNAM", "PRICE": 60, "STOCK": True}
+    "indonesia": {"NAME": " 🇮🇩 INDONESIA", "PRICE": 37,"STOCK": True},
+    "vietnam":{"NAME": "🇻🇳 VIETNAM", "PRICE":60, "STOCK": True},
+    "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True}
 }
 COUNTRY_NUMBERS = {
 	"indonesia": [],
     "usa": [],
     "india":[],
     "bangladesh":[],
-    "zimbabwe": [],
-    "myanmar":[],
-    "vietnam":[]
+    "vietnam":[],
+    "nepal": [],
+    "myanmar":[]
 }
 
 def send_payment_qr(chat_id, amount):
@@ -579,4 +578,4 @@ def admin_reply(message):
 bot.remove_webhook()
 print(bot.get_me())       
 print("Bot running...")
-bot.polling()
+bot.infinity_polling()
