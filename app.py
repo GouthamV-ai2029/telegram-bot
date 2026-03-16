@@ -1,17 +1,28 @@
 import streamlit as st
-import json
+import telebot
+import threading
 
-st.title("Telegram Dashboard")
+BOT_TOKEN = "8726049487:AAFr-7C9nfXwfEQz1ymXwT3Fj_62oB5vIjI"
 
-try:
-    with open("database.json") as f:
-        lines = f.readlines()
+bot = telebot.TeleBot(BOT_TOKEN)
 
-    for line in lines:
-        msg = json.loads(line)
-        st.write(f"User: {msg['user_id']}")
-        st.write(f"Message: {msg['text']}")
-        st.divider()
+messages = []
 
-except:
-    st.write("No messages yet")
+# Telegram bot handler
+@bot.message_handler(func=lambda m: True)
+def handle_msg(message):
+    messages.append((message.chat.id, message.text))
+
+# Run bot in background
+def run_bot():
+    bot.infinity_polling()
+
+threading.Thread(target=run_bot, daemon=True).start()
+
+# Streamlit UI
+st.title("Telegram Bot Dashboard")
+
+st.write("Messages received:")
+
+for user, msg in messages:
+    st.write(f"{user}: {msg}")t")
