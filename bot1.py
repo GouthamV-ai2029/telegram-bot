@@ -78,9 +78,9 @@ def is_user_joined(user_id):
 COUNTRIES = {
     "india": {"NAME": "🇮🇳 INDIA", "PRICE": 35, "STOCK": True},
     "usa": {"NAME": "🇺🇸 USA", "PRICE": 60, "STOCK": True},
-    "zimbabwe": {"NAME": "🇿🇼 ZIMBABWE", "PRICE": 40, "STOCK": True},
+    "zimbabwe": {"NAME": "🇿🇼 ZIMBABWE", "PRICE": 38, "STOCK": True},
     "bangladesh": {"NAME": "🇧🇩 BANGLADESH", "PRICE": 40, "STOCK": True},
-    "ethiopia": {"NAME": "🇪🇹 ETHIOPIA", "PRICE": 60,"STOCK": True},
+    "indonesia": {"NAME": "🇮🇩 INDONESIA", "PRICE": 37,"STOCK": True},
     "iran":{"NAME": "🇮🇷 IRAN", "PRICE":55, "STOCK": True},
     "myanmar": {"NAME": "🇲🇲 MYANMAR","PRICE":37,"STOCK":True}
 }
@@ -89,8 +89,8 @@ COUNTRY_NUMBERS = {
     "usa": [],
     "india":[],
     "bangladesh":[],
-    "ethiopia":[],
-    "nepal": [],
+    "indonesia":[],
+    "zimbabwe": [],
     "myanmar":[]
 }
 
